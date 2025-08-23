@@ -70,6 +70,14 @@ let name = window.prompt("Apna naam likho:");
 // Input lene ke liye popup
 let newWin = window.open("https://google.com", "_blank"); // nayi tab khol do
 // newWin.close();  // tab close karne ke liye
+--------------------------------------------------------------------
+<input type="text" placeholder="Type something" id="myInput" />
+<script>
+  document.getElementById("myInput").addEventListener("input", (e) => {
+    console.log("You typed:", e.target.value);
+  });
+</script>
+Jaise hi tum kuch type karte ho, e.target.value tumhara input ka latest text de dega.
 
 
 
